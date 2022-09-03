@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+body {
+    background: rgb(226, 226, 226);
+}
+header {
+    margin-bottom: 40px;
+}
+.logo_text {
+    font-family: "EB Garamond", serif;
+    font-size: 25px;
+}
+.def_text {
+    color: white;
+    background-color: rgb(86, 103, 235);
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.sub_container {
+    width: 95%;
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.sub_navbar {
+    border-bottom: 1px solid gray;
+}
+.right_div {
+    align-items: center;
+}
+.right_item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.right_item li a {
+    text-decoration: none;
+    color: black;
+}
+.right_item li {
+    padding: 0px 15px;
+}
+.img img {
+    width: 40px;
+    padding-top: 8px;
+    border-radius: 100%;
+}
+.btn_clicked {
+    border-bottom: 2px solid rgb(86, 103, 235);
+    color: rgb(86, 103, 235) !important;
+}
+.category {
+    color: rgb(133, 133, 133);
+}
+.category ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.category ul li {
+    transition: all 0.3s ease 0s;
+}
+.category_item a {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+.category_item:hover {
+    background: white;
+}
+.sub_news_found p {
+    width: 100%;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    margin-bottom: 50px;
+}
+.right_filter {
+    display: flex;
+    gap: 15px;
+}
+.right_filter p a {
+    padding: 10px;
+    border: 1px solid rgb(86, 103, 235);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+.left_filter {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.filter_dropdown {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left_filter {
+    padding: 0px 10px;
+}
+.active {
+    background: rgb(86, 103, 235);
+    color: white !important;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+}
+.news_img img {
+    width: 250px;
+    height: 100%;
+}
+.news_ancor {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.news_info {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: space-between;
+}
+.news_ancor_img {
+    height: 55px;
+}
+.news_ancor_img img {
+    width: 55px;
+    border-radius: 100%;
+}
+body .modal-dialog {
+    width: 750px !important;
+    }
+.news_area {
+    padding: 15px;
+    background: white;
+    display: flex;
+    gap: 30px;
+    border-radius: 10px;
+}
+.white {
+    background: white;
+}
+.news_section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.news_publish_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total_viwe {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: gray;
+}
+.Right_arrow_news i {
+    color: rgb(86, 103, 235);
+    font-size: 20px;
+}
+.star {
+    color: gray;
+}
+li.category_item {
+    padding: 10px;
+    border-radius: 10px;
+}
+.auther p {
+    margin: 0;
+}
+.total_viwe p {
+    margin: 0;
+}
+p.news_details {
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+p.details {
+    max-height: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.no_news {
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    .news_category {
+        flex-wrap: wrap;
+    }
+    .sub_container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .sub_container{
+        width: 100%;
+    }
+    .news_category {
+        flex-direction: column;
+    }
+
+    .filter {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left_filter {
+        gap: 30px;
+    }
+
+    .right_filter {
+        gap: 30px;
+    }
+    .news_area{
+        flex-direction: column;
+    }
+    .news_img img{
+        width: 100%;
+    }
+    .news_ancor{
+        flex-direction: column;
+    }
+    .news_publish_information{
+        align-items: flex-end;
+    }
+}
